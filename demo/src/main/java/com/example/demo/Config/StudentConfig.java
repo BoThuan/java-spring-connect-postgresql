@@ -22,15 +22,27 @@ public class StudentConfig {
                     "bothuan@gmail.com",
                     LocalDate.of(2001, Month.JULY, 13)
             );
+             student giang = new student(
+                    2L,
+                    "giang",
+                    "giang@gmail.com",
+                    LocalDate.of(2000, Month.JUNE,22)
+            );
+             student nhi = new student(
+                    1L,
+                    "nhi",
+                    "nhi@gmail.com",
+                    LocalDate.of(2002, Month.DECEMBER, 13)
+            );
              student tam = new student(
                     1L,
                     "tam",
                     "tam@gmail.com",
-                    LocalDate.of(2001, Month.OCTOBER, 01)
+                    LocalDate.of(2003, Month.OCTOBER, 15)
             );
 
              repository.saveAll(
-                     List.of(thuan, tam)
+                     List.of(thuan,giang,nhi, tam)
              );
         };
     }
